@@ -1,77 +1,88 @@
+/* O '*' aplica os estilos a todos os elementos da página */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box; /* Padding e a borda são incluídos no cálculo da largura e altura dos elementos */
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o padding padrão de todos os elementos */
 }
 
+/* Estilos gerais para o corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: Arial, sans-serif; /* Define a fonte padrão para o corpo */
+    background-color: #f4f4f4; /* Define a cor de fundo da página */
+    display: flex; /* Cria um layout flexível */
+    justify-content: center; /* Centraliza os itens na horizontal */
+    align-items: center; /* Centraliza os itens na vertical */
+    height: 100vh; /* Faz o corpo ocupar 100% da altura da janela */
 }
 
+/* Estilos para o contêiner do formulário */
 .form-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    background-color: #fff; /* Define a cor de fundo do contêiner */
+    padding: 20px; /* Adiciona um padding de 20px ao redor do conteúdo */
+    border-radius: 10px; /* Arredonda os cantos */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do contêiner */
+    width: 400px; /* Define a largura do contêiner do formulário */
 }
 
+/* Estilos para o título do formulário */
 h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
+    text-align: center; /* Alinha o título no centro */
+    margin-bottom: 20px; /* Adiciona uma margem abaixo do título */
+    color: #333; /* Define a cor do título */
 }
 
+/* Estilos para os grupos de campo dentro do formulário */
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Adiciona um espaço abaixo de cada grupo de campo */
 }
 
+/* Estilos para os rótulos dos campos */
 label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
+    display: block; /* Faz o rótulo ocupar toda a largura disponível */
+    font-weight: bold; /* Define a fonte como negrito */
+    margin-bottom: 5px; /* Adiciona uma margem abaixo do rótulo */
+    color: #333; /* Define a cor do texto */
 }
 
+/* Estilos para os campos de entrada de texto, data, textarea e select */
 input[type="text"],
 input[type="date"],
 textarea,
 select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
+    width: 100%; /* Faz o campo ocupar toda a largura disponível */
+    padding: 10px; /* Adiciona um padding de 10px dentro do campo */
+    border: 1px solid #ccc; /* Define a borda  */
+    border-radius: 5px; /* Arredonda os cantos dos campos */
+    font-size: 14px; /* Define o tamanho da fonte como 14px */
 }
 
+/* Estilos específicos para a área de texto (textarea) */
 textarea {
-    resize: none;
+    resize: none; /* Remove a possibilidade de redimensionar a área de texto */
 }
 
+/* Estilos para os campos de entrada quando estão em foco (quando o usuário clica ou seleciona o campo) */
 input[type="text"]:focus,
 input[type="date"]:focus,
 textarea:focus,
 select:focus {
-    border-color: #007BFF;
-    outline: none;
+    border-color: #007BFF; /* Altera a cor da borda para azul quando o campo está em foco */
+    outline: none; /* Remove o contorno padrão ao focar o campo */
 }
 
+/* Estilos para o botão */
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    padding: 10px; /* Adiciona um padding de 10px dentro do botão */
+    background-color: #007BFF; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto dentro do botão */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Arredonda os cantos */
+    font-size: 16px; /* Define o tamanho da fonte dentro do botão */
+    cursor: pointer; /* Muda o cursor para uma mãozinha (indicando que é clicável) */
 }
 
+/* Estilos para o botão quando o usuário passa o mouse sobre ele */
 button:hover {
-    background-color: #0061c9;
+    background-color: #0061c9; /* Altera a cor de fundo para um tom mais escuro de azul quando o mouse está sobre o botão */
 }
