@@ -3,41 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
     <title>Formulário com LocalStorage</title>
+    <!-- Link para o arquivo de estilo (CSS)  -->
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  
 </head>
 <body>
 
+    <!-- Contêiner para o formulário -->
     <div class="form-container">
+        <!-- Título principal -->
         <h2>Cadastro de Usuário</h2>
+        
+        <!-- Início do formulário com o id 'userForm' -->
         <form id="userForm">
+            <!-- Campo para inserir o ID do usuário -->
             <label>ID:</label>
-            <input type="text" id="id" required>
+            <input type="text" id="id" required> <!-- 'required' campo é obrigatório -->
             <br>
             <br>
             
+            <!-- Campo para inserir o nome do usuário -->
             <label>Nome:</label>
             <input type="text" id="nome" required>
             <br>
             <br>
             
+            <!-- Campo para selecionar a data de nascimento -->
             <label>Data de Nascimento:</label>
             <input type="date" id="dataNascimento" required>
             <br>
             <br>
             
+            <!-- Campo para inserir o time favorito do usuário -->
             <label>Qual seu Time?</label>
             <input type="text" id="time" required>
             <br>
             <br>
 
+            <!-- Botão para salvar os dados do usuário -->
             <button type="button" onclick="salvarUsuario()">Salvar</button>
         </form>
+        
         <br>
         
+        <!-- Botão para consultar as informações salvas do usuário -->
         <button onclick="consultarUsuario()">Consultar Usuário</button>
     </div>
+
+      <!-- Incluindo o script JavaScript -->
+    <script src="script.js"></script>
     
 </body>
 </html>
+
